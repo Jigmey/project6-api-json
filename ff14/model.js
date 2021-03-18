@@ -14,14 +14,6 @@ let ff14Schema = new mongoose.Schema({
         Text: String
     }
   ]
-  // Character: {
-  //   ActiveClassJob: {
-  //       IsSpecialised: Boolean,
-  //       JobID: Number,
-  //       Level: Number,
-  //       Name: String
-  //   }
-  // }
 })
 
 let FF14 = mongoose.model('ff14', ff14Schema)
