@@ -3,7 +3,7 @@ fs = require('fs').promises;
 
 const fetch = require('node-fetch');
 
-fetch('https://xivapi.com/character/730968')
+fetch('https://xivapi.com/lore?string=legendary&columns=Text,Data')
   .then(response => response.json())
   .then(data => fs.writeFile("./data.json", JSON.stringify(data)));
 
